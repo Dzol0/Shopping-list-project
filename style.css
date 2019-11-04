@@ -1,0 +1,111 @@
+/* VARIABLES */
+/* ROOT & BASIC STYLES */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: #05c46b;
+  color: #f1f3f6; }
+
+.container {
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  width: 100rem; }
+
+/* SITE H1 AND DESCRIPTION STYLES */
+.opening {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5rem; }
+  .opening__site-title {
+    font-size: 8rem;
+    text-transform: uppercase;
+    line-height: 1; }
+  .opening__site-description {
+    padding: 3rem 2rem;
+    font-size: 2rem;
+    text-align: justify; }
+
+/* SITE H1 AND DESCRIPTION STYLES */
+.new-item {
+  padding: 1rem;
+  border: 0.1rem solid currentColor;
+  border-radius: 5rem;
+  margin: 0 auto;
+  width: 25rem;
+  transition: .5s; }
+  .new-item__text {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: currentColor;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    transition: 1s; }
+    .new-item__text::placeholder {
+      color: currentColor;
+      font-family: inherit;
+      font-weight: inherit; }
+    .new-item__text:focus {
+      font-size: 2.2rem; }
+
+.new-item-width {
+  width: 35rem;
+  transform: scale(1.1); }
+
+.shopping-list {
+  font-size: 2rem; }
+  .shopping-list__items-container {
+    list-style-type: none;
+    padding: 2rem 3rem; }
+  .shopping-list__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    transition: .2s; }
+  .shopping-list__item:hover {
+    background-color: #05b362;
+    border-radius: 1rem; }
+
+.print {
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s; }
+  .print__text {
+    padding: 1rem;
+    border: 0.1rem solid currentColor;
+    border-radius: 5rem;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .5s; }
+  .print__text:hover {
+    color: #05c46b;
+    background-color: #f1f3f6;
+    border: 1px solid #f1f3f6; }
+
+.fullOpacity {
+  visibility: visible;
+  opacity: 1; }
+
+.nullOpacity {
+  visibility: hidden;
+  opacity: 0; }

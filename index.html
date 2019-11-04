@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Zakupownik | Szybka lista zakupów</title>
+</head>
+<body>
+    <div class="container">
+        <div class="opening">
+            <h1 class="opening__site-title">Zakupownik</h1>
+            <p class="opening__site-description">Zakupownik to prosta w obsłudze i intuicyjna aplikacja pozwalająca na błyskawiczne utworzenie listy zakupów. Wprowadź produkty i wyeksportuj listę do pliku PDF bądź wydrukuj.</p>
+        </div>
+        <form class="new-item">
+            <input class="new-item__text" type="text" name="add" placeholder="Wprowadź produkt" />
+        </form>
+        <div class="shopping-list">
+            <ul id="listToPrint" class="shopping-list__items-container"></ul>
+        </div>
+    
+        <div class="print">
+            <a onclick="printDiv('listToPrint')" class="print__text" />Drukuj listę zakupów</a>
+            
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
