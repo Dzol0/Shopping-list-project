@@ -61,7 +61,7 @@ body {
     }
 }
 
-/* SITE H1 AND DESCRIPTION STYLES */
+/* SHOPPING LIST STYLES */
 
 .new-item {
     @include border-rounded;
@@ -152,6 +152,8 @@ body {
     }
 
 }
+
+/* FADE VIA JS CLASSES */
 
 .fullOpacity {
     visibility: visible;
